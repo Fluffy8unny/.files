@@ -26,8 +26,8 @@ set recolor-darkcolor		    "#787c99"
 
 set index-fg			        "#787c99"
 set index-bg			        "#1A1B26"
-set index-active-fg		        "#787c99"
-set index-active-bg		        "#1A1B26"
+set index-active-fg		        "#1A1B26"
+set index-active-bg		        "#FF9E64"
 
 set recolor
 set selection-clipboard clipboard
