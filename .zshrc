@@ -118,3 +118,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+#SSH AGENT
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
