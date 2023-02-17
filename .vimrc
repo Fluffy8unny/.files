@@ -256,7 +256,8 @@ inoremap <C-v> <F10><C-r>+<F10>
 vnoremap <C-c> "+y 
 set clipboard=unnamedplus
 set mouse=r
-nnoremap <S-F> :FZF<CR>
+
+nnoremap <C-O> :FZF<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-i': 'split',
