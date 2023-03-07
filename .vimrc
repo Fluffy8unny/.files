@@ -11,12 +11,24 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'preservim/nerdtree'
 Plugin 'preservim/tagbar'
 Plugin 'Yggdroot/indentLine'
-Plugin 'bling/vim-bufferline'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
+Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'bling/vim-bufferline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
+set noshowmode
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_theme='ayu_mirage'
+set t_Co=256
 filetype plugin indent on
 
 " How many columns of whitespace a \t is worth
@@ -46,7 +58,6 @@ let g:tagbar_autofocus = 1 " Highlight the active tag
 let g:tagbar_autoshowtag = 1 " Make panel vertical and place on the right
 let g:tagbar_position = 'botright vertical' " Mapping to open and close the panel
 nmap <F8> :TagbarToggle<CR>
-
 
 " Use thk ack tool as the backend
 let g:ctrlsf_backend = 'ack'
