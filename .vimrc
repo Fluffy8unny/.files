@@ -92,6 +92,8 @@ nnoremap <C-H> <C-W><C-K>
 set splitbelow
 set splitright
 
+nnoremap <esc> :noh<return><esc>
+
 autocmd FileType * hi Pmenu ctermfg=Yellow ctermbg=Black
 autocmd FileType * hi PmenuSel ctermfg=Yellow ctermbg=Black
 autocmd FileType * hi FgCocErrorFloatBgCocFloating ctermfg=Yellow ctermbg=Black  guifg=White guibg=Black
@@ -108,7 +110,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.

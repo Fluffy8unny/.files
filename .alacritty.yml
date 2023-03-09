@@ -16,13 +16,11 @@ window:
     #y: 0
 
   padding:
-    x: 10
-    y: 10
+    x: 0
+    y: 0
 
-  dynamic_padding: false
+  dynamic_padding: true
   #decorations: none
-
-
 
 scrolling:
   history: 50000
