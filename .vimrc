@@ -18,6 +18,7 @@ Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'bling/vim-bufferline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'wfxr/minimap.vim'
 call vundle#end()
 
 set noshowmode
@@ -285,3 +286,8 @@ tnoremap <Esc> <C-\><C-n>
 " add scroll offset
 set so=5
 
+
+
+let g:minimap_width = 10
+let g:minimap_auto_start = 1
+let g:minimap_auto_start_win_enter = 1
