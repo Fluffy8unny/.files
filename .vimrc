@@ -18,7 +18,10 @@ Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'bling/vim-bufferline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'wfxr/minimap.vim'
+Plugin 'lervag/vimtex'
+"Plugin 'wfxr/minimap.vim'
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'vlime/vlime', {'rtp': 'vim/'} 
 call vundle#end()
 
 set noshowmode
@@ -290,4 +293,10 @@ set so=5
 
 let g:minimap_width = 10
 let g:minimap_auto_start = 1
-let g:minimap_auto_start_win_enter = 1
+let g:minimap_auto_start_win_enter = 1 
+
+set rtp^="/home/fluffybunny/.opam/default/share/ocp-indent/vim"
+
+"nnoremap <silent> <leader>rn <cmd>lua require('renamer').rename()<cr>
+"nnoremap <silent> <leader>rn <cmd>lua require('renamer').rename()<cr>
+

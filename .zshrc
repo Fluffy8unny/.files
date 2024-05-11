@@ -120,3 +120,6 @@ unset __conda_setup
 
 #SSH AGENT
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+# opam configuration
+[[ ! -r /home/fluffybunny/.opam/opam-init/init.zsh ]] || source /home/fluffybunny/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
